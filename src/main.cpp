@@ -22,7 +22,7 @@ const String PHONE = "+213xxxxxxxxx";
  */
 #define txPin 2
 #define rxPin 3
-SoftwareSerial sim800(rxPin, txPin);
+SoftwareSerial sim800(txPin, rxPin);
 //--------------------------------------------------------------
 /*
  * GY-GPS6MV2
@@ -42,7 +42,7 @@ int buzzer_timer = 0;
 bool alarm = false;
 boolean send_alert_once = true;
 //--------------------------------------------------------------
-// size of the geofencing (in meters)
+// size of the geofencing area (in meters)
 const float maxDistance = 30;
 //--------------------------------------------------------------
 float initialLatitude = 36.69747360782452;
