@@ -117,13 +117,10 @@ void loop()
     if (send_alert_once == true)
     {
       digitalWrite(BUZZER, HIGH);
-      Serial.println("1");
       sendAlert();
-      Serial.println("2");
       alarm = true;
       send_alert_once = false;
       buzzer_timer = millis();
-      Serial.println("3");
     }
     //------------------------------------------
   }
